@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <h2>Bienvenido a la Página de Inicio</h2>
+    <p>Este es el contenido específico de la página de inicio.</p>
+    <a href="{{ url_for('show_alumnos') }}">Ver Alumnos</a>
+    <a href="{{ url_for('agregar_alumno') }}">Agregar Alumno</a>
+{% endblock %}
